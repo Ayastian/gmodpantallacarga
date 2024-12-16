@@ -41,7 +41,7 @@ Config.announcementLength = 3000;
  * Image Filename
  * DROP IMAGE IN "images" FOLDER
  */
-Config.backgroundImage = "fimke405wa451";
+Config.backgroundImage = "fimke405wa451.png";
 
 /**
  * Enable debug messages?
