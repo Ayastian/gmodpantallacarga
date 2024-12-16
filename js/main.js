@@ -83,13 +83,13 @@ function SetStatusChanged(status) {
     }
     $(el).css("opacity", "" + 1 - i * 0.1);
   });
-  if (status === "Workshop Complete") {
+  if (status === "Workshop completada") {
     allow_increment = false;
     setLoad(80);
-  } else if (status === "Client info sent!") {
+  } else if (status === "Entrando") {
     allow_increment = false;
     setLoad(95);
-  } else if (status === "Starting Lua...") {
+  } else if (status === "Iniciando Lua...") {
     setLoad(100);
   } else {
     if (allow_increment) {
@@ -108,10 +108,10 @@ function loadAll() {
 
   // first time loading if DownloadingFile isn't called after some time
   setTimeout(function() {
-    debug("Checking if first time loading.. " + downloadingFileCalled);
+    debug("Viendo si es la primera vez que entras.. " + downloadingFileCalled);
     if (downloadingFileCalled) {
       announce(
-        "This is your first time joining this server! - Please wait for the files to download...",
+        "Primera vez entrando al sv, descargando weas",
         true
       );
     }
